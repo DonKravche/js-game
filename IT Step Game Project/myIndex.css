@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+body .top-right-btn {
+  position: absolute;
+  top: 10px; /* Adjust the value as needed */
+  right: 10px; /* Adjust the value as needed */
+}
+body .about {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body .about .header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .about .header-container h1 {
+  letter-spacing: 20px;
+  word-spacing: 10px;
+  text-align: center;
+  font-family: cursive;
+  color: rgb(187, 176, 18);
+}
+body .functional {
+  margin-top: 50px;
+}
+body .functional .nav-container {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  justify-content: center;
+}
+body .functional .level,
+body .functional .score,
+body .functional .startGame {
+  margin-left: 10px;
+}/*# sourceMappingURL=myIndex.css.map */

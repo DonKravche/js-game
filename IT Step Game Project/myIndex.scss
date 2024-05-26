@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .top-right-btn {
+        position: absolute;
+        top: 10px;  /* Adjust the value as needed */
+        right: 10px; /* Adjust the value as needed */
+    }
+
+    .about {
+        padding-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .header-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            h1 {
+                letter-spacing: 20px;
+                word-spacing: 10px;
+                text-align: center;
+                font-family: cursive;
+                color: rgb(187, 176, 18);
+
+            }
+        }
+    }
+
+    .functional {
+        margin-top: 50px;
+
+        .nav-container {
+            display: flex;
+            gap: 150px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .level,
+        .score,
+        .startGame {
+            margin-left: 10px;
+        }
+    }
+}
