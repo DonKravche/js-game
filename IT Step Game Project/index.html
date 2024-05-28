@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="myIndex.css">
     <title>Document</title>
 </head>
 <body>
-    <button class="top-right-btn">df</button>
+    <button class="top-right-btn day_night_button"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    <div class="music">
+        <audio id="audio_player" src="/IT Step Game Project/music/Colors of Life.mp3" type="audio/mp3"></audio>
+        <button id="audio_toggle_button"><i class="fa-solid fa-music"></i></button>
+    </div>
+
     <header class="about">
         <div class="header-container">
             <h1>Guess The Color</h1>
@@ -23,20 +29,34 @@
                     <option value="2">Level: Medium </option>
                     <option value="3">Level: Hard </option>
                 </select>
-                <div class="level">
+                <div class="viewLevel">
                     <p>level - ?</p>
                 </div>
                 <div class="score">
                     <p>score: 0</p>
                 </div>
                 <div class="startGame">
-                    <button>Start Game!</button>
+                    <button class="btn">Start Game!</button>
                 </div>
             </div>
         </nav>
     </div>
 
+    <div class="showRandomColor">      
+    </div>
+
+
     <main>
+        <button class="buttons"></button>
+        <button class="buttons"></button>
+        <button class="buttons"></button>
+        <button class="buttons"></button>
+        <button class="buttons"></button>
+        <button class="buttons"></button>
+        <button class="buttons"></button>
+        <button class="buttons"></button>
+        <button class="buttons"></button>
+        <!-- <div class="buttons"></div>
         <div class="buttons"></div>
         <div class="buttons"></div>
         <div class="buttons"></div>
@@ -44,8 +64,8 @@
         <div class="buttons"></div>
         <div class="buttons"></div>
         <div class="buttons"></div>
-        <div class="buttons"></div>
-        <div class="buttons"></div>
+        <div class="buttons"></div> -->
     </main>
+    <script src="/IT Step Game Project//app.js"></script>
 </body>
 </html>

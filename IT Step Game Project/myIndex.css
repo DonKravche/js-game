@@ -12,8 +12,17 @@ body {
 }
 body .top-right-btn {
   position: absolute;
-  top: 10px; /* Adjust the value as needed */
-  right: 10px; /* Adjust the value as needed */
+  top: 10px;
+  /* Adjust the value as needed */
+  right: 10px;
+  /* Adjust the value as needed */
+}
+body .music {
+  position: absolute;
+  top: 50px;
+  /* Adjust the value as needed */
+  right: 10px;
+  /* Adjust the value as needed */
 }
 body .about {
   padding-top: 50px;
@@ -46,4 +55,33 @@ body .functional .level,
 body .functional .score,
 body .functional .startGame {
   margin-left: 10px;
+}
+body .functional .btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+body Main {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 150px);
+  /* 3 columns */
+  justify-content: center;
+  margin-top: 50px;
+}
+body Main .buttons {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.showRandomColor {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=myIndex.css.map */
