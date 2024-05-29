@@ -7,7 +7,7 @@ let showRandomColorDiv = document.querySelector('.showRandomColor');
 
 let arry = [];
 let currentScore = 0;
-let correctAnswerClicked = false; // Flag to check if the correct answer was clicked
+let correctAnswerClicked = false;
 
 function getRandomColor() {
     let r = Math.floor(Math.random() * 256);
@@ -52,6 +52,9 @@ function typeOfLevels() {
         } else {
             viewLevel.innerHTML = 'Level: None';
         }
+        // Reset score when level changes
+        currentScore = 0;
+        score.textContent = currentScore.toString();
     });
 }
 
@@ -105,9 +108,7 @@ function start() {
     });
 }
 
-
 start();
-
 
 function dayNight() {
     let day_night_button = document.querySelector('.day_night_button');
@@ -129,7 +130,6 @@ function dayNight() {
 }
 
 dayNight();
-
 
 function toggleMute() {
     const audioPlayer = document.getElementById('audio_player');
@@ -153,7 +153,6 @@ function toggleMute() {
     audioPlayer.addEventListener('play', function () {
         isPlaying = true;
     });
-
 }
 
 toggleMute();
